@@ -13,33 +13,35 @@ class Stopwatch extends StatelessWidget {
     // Método para autocompletar os minutos e segundos com zeros (0)
     pattern(value) => value.toString().padLeft(2, '0');
 
-    return Container(
-      color: Colors.redAccent,
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            'Hora de trabalhar, foco total!',
-            style: TextStyle(
-              fontSize: 35,
-              color: Colors.white,
+    return Observer(
+      builder: (_) => Container(
+        color: store.isWorking() ? Colors.redAccent : Colors.green,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              store.isWorking()
+                  ? 'Hora de trabalhar, foco total!'
+                  : 'Hora de dencansar',
+              style: TextStyle(
+                fontSize: 35,
+                color: Colors.white,
+              ),
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Text(
-            '${pattern(store.minutes)}:${pattern(store.seconds)}',
-            style: TextStyle(
-              fontSize: 100,
-              color: Colors.white,
+            SizedBox(
+              height: 20,
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          Observer(
-            builder: (_) => Row(
+            Text(
+              '${pattern(store.minutes)}:${pattern(store.seconds)}',
+              style: TextStyle(
+                fontSize: 100,
+                color: Colors.white,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Se o cronômetro não foi iniciado, exibe o botão de iniciar
@@ -72,8 +74,8 @@ class Stopwatch extends StatelessWidget {
                 ),
               ],
             ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }

@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // Provendo o estados para a aplicação
+    // Provendo os estados para a aplicação
     return MultiProvider(
       providers: [
         Provider<PomodoroStore>(
