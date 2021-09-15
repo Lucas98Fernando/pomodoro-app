@@ -23,8 +23,9 @@ class Stopwatch extends StatelessWidget {
               store.isWorking()
                   ? 'Hora de trabalhar, foco total!'
                   : 'Hora de dencansar',
+              textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 35,
+                fontSize: 30,
                 color: Colors.white,
               ),
             ),
