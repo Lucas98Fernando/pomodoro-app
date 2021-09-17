@@ -1,6 +1,7 @@
 // import 'package:flutter_mobx/flutter_mobx.dart';
 // import 'package:pomodoro/store/counter.store.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pomodoro/pages/Pomodoro.dart';
 import 'package:pomodoro/store/pomodoro.store.dart';
 import 'package:provider/provider.dart';
@@ -26,6 +27,8 @@ class MyApp extends StatelessWidget {
         title: 'Pomodoro',
         theme: ThemeData(
           primarySwatch: Colors.blue,
+          textTheme:
+              GoogleFonts.montserratTextTheme(Theme.of(context).textTheme),
         ),
         home: const Pomodoro(),
       ),
