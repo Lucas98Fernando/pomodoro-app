@@ -1,16 +1,46 @@
-# pomodoro
+# Pomodoro App ⏱️
 
-A new Flutter project.
+- Aplicação desenvolvida com Flutter para utilização da técnica de Pomodoro.
 
-## Getting Started
+### Screenshots da aplicação:
 
-This project is a starting point for a Flutter application.
+<img src="./assets/images/home-work.png" width="200"/>
 
-A few resources to get you started if this is your first Flutter project:
+<img src="./assets/images/home-rest.png" width="200"/>
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Rodando o app em seu computador:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### ✔️ Pré-requisitos para utilização:
+
+- Git
+- Node.js
+- NPM ou YARN
+- Editor de código (Visual Studio Code, Sublime, Atom, etc...)
+
+### 1️⃣ Clone o repositório
+
+- Abra o terminal e execute o comando abaixo:
+
+<pre>
+    <code>git clone https://github.com/Lucas98Fernando/pomodoro-app.git</code>
+</pre>
+
+### 2️⃣ Abra a pasta criada no VSCode
+
+- Instale os plugins do Dart e do Flutter no Visual Studio Code.
+
+### 3️⃣ Baixe as dependências
+
+- Execute o comando abaixo no terminal na raíz do projeto:
+
+<pre>
+    <code>flutter pub get</code>
+</pre>
+
+### 4️⃣ Executando o app
+
+- Para rodar a aplicação execute o comando abaixo no terminal na raíz do projeto:
+
+<pre>
+    <code>flutter run</code>
+</pre>
