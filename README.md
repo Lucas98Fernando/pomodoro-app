@@ -4,10 +4,11 @@
 
 ### Screenshots da aplicação:
 
-<img src="./assets/images/home-work.png" width="200"/>
-
-<img src="./assets/images/home-rest.png" width="200"/>
-
+<p>
+    <img src="./assets/images/home-work.png" width="200"/>
+    <img src="./assets/images/home-rest.png" width="200"/>
+</p>
+    
 ## Rodando o app em seu computador:
 
 ### ✔️ Pré-requisitos para utilização:
